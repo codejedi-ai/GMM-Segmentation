@@ -1,0 +1,20 @@
+{
+	id: "960326c1-6557-45f8-a4ad-9aab2a182eb8"
+	type: "player"
+	player_name: "Genzick"
+	ranks: {
+		960326c1-6557-45f8-a4ad-9aab2a182eb8: "owner"
+	}
+	properties: {
+		"ftbchunks:allow_explosions": 0b
+		"ftbteams:display_name": "Genzick"
+		"ftbteams:color": "#59FFB3"
+		"ftbchunks:block_edit_mode": "allies"
+		"ftbchunks:block_interact_mode": "allies"
+		"ftbteams:description": ""
+		"ftbteams:free_to_join": 0b
+		"ftbchunks:allow_fake_players": 1b
+	}
+	message_history: [ ]
+	extra: { }
+}
