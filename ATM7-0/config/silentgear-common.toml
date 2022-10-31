@@ -91,6 +91,14 @@
 	damageFactorLevels = 10
 	#If true, gear breaks permanently, like vanilla tools and armor
 	breaksPermanently = false
+	#The item tier assigned to gear tool items.
+	#Leave this alone unless you are trying to work around mod compatibility issues!
+	#Normally, this value is not used for anything. But some mods mistakenly check it.
+	dummyToolTier = "WOOD"
+	#The armor material assigned to the gear armor items.
+	#Leave this alone unless you are trying to work around mod compatibility issues!
+	#Normally, this value is not used for anything. But some mods mistakenly check it.
+	dummyArmorMaterial = "LEATHER"
 
 	[gear.enchanting]
 		#Allow gear items to be enchanted by normal means (enchanting table, etc.)
@@ -138,6 +146,8 @@
 	[gear.upgrades]
 		#If true, upgrade parts may only be applied in an anvil.
 		applyInAnvilOnly = false
+		#This applies to the recipe where placing a gear item and a part into a crafting grid will swap out the part.
+		destroySwappedParts = false
 
 #Settings for the material grader
 [materialGrader]
@@ -191,22 +201,6 @@
 		#Veins of crimson iron ore per chunk
 		#Range: 0 ~ 1000
 		count = 14
-
-	[world.wildFlax]
-		#Number of patches of wild flax to attempt to place per chunk (some biomes only)
-		#Range: 0 ~ 100
-		patchCount = 1
-		#Block place attempts per wild flax cluster
-		#Range: 0 ~ 1000
-		tryCount = 16
-
-	[world.wildFluffy]
-		#Number of patches of wild fluffy plants to attempt to place per chunk (some biomes only)
-		#Range: 0 ~ 100
-		patchCount = 1
-		#Block place attempts per wild fluffy plants cluster
-		#Range: 0 ~ 1000
-		tryCount = 16
 
 [debug]
 
