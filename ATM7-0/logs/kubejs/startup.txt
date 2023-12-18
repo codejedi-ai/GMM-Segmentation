@@ -1,4 +1,0 @@
-[22:38:42] [INFO ] Loaded script startup_scripts:customMekanism.js in 0.08 s
-[22:38:42] [INFO ] Loaded script startup_scripts:custom_items.js in 0.002 s
-[22:38:42] [INFO ] Loaded script startup_scripts:worldgen.js in 0.011 s
-[22:38:42] [INFO ] Loaded 3/3 KubeJS startup scripts in 1.62 s
