@@ -117,8 +117,8 @@ class MyGraphCuts:
         # calculate the weights
         # weights_right = wpq_vector(lambda_, img, img_roll_right, sigma)
         # weights_down = wpq_vector(lambda_, img, img_roll_down, sigma)
-        n_right = wpq_vector(lambda_, img, np.roll(img, -1, axis=1), sigma)
-        n_below = wpq_vector(lambda_, img, np.roll(img, -1, axis=0), sigma)
+        n_right = wpq_vector(lambda_, img, img_roll_right, sigma)
+        n_below = wpq_vector(lambda_, img, img_roll_down, sigma)
 
         structure_x, structure_y = np.zeros((3, 3)), np.zeros((3, 3))
         structure_x[1, 2] = 1
