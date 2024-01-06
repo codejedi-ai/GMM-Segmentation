@@ -19,15 +19,15 @@ pip install -f requirements.txt
 To segment an image, you need to import the GMM_segmentation module and create an instance of the GMM_segmenter class. You can specify the number of segments, the type of covariance matrix, the initialization method, and other parameters in the constructor. For example, to create a segmenter with 3 segments, full covariance matrix, and k-means initialization, you can use:
 
 ```python
-from GMM_segmentation import GMM_segmenter
-segmenter = GMM_segmenter(n_components=3, covariance_type='full', init_params='kmeans')
+from MyGraphCuts import MyGraphCuts
+im = plt.imread(os.path.join(im_folder, img_list[i]))
+segmenter = MyGraphCuts(im, 0.01, 0.005)
 ```
 
 Then, you can use the fit method to fit the Gaussian mixture model to the image data, and the predict method to assign each pixel to a segment. For example, to segment an image stored in a NumPy array called image, you can use:
 
 ```python
-segmenter.fit(image)
-labels = segmenter.predict(image)
+labels = segmenter.compute_labels_mask((foreground_slices_list, background_slices_list))
 ```
 
 The labels array will contain the segment index (from 0 to n_components-1) for each pixel in the image. You can use the labels array to visualize the segmentation result, or to perform further analysis on the segments. You can also use the score method to evaluate the log-likelihood of the image data given the fitted model, or the bic method to compute the Bayesian information criterion, which can be used to compare different models or select the optimal number of segments.
