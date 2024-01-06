@@ -1,0 +1,6 @@
+# Ignore everything in images folder
+images/*
+
+# Ignore everything in matplot folder
+matplot/*
+
