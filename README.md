@@ -1,3 +1,5 @@
+#README
+
 GMM segmentation is a Python package that uses PyMaxflow and Gaussian mixture modelling to perform image segmentation. Image segmentation is the process of dividing an image into meaningful regions or segments, such as foreground and background, objects and scenes, or different tissue types in medical images. GMM segmentation uses a probabilistic approach that assumes each pixel in the image belongs to one of a finite number of Gaussian distributions, each representing a segment. PyMaxflow is a library that implements the maxflow/mincut algorithm, which is used to find the optimal partition of the image into segments based on the Gaussian mixture model. GMM segmentation can handle various types of images, such as grayscale, color, or multispectral, and can also incorporate spatial information and regularization terms to improve the segmentation results.
 
 To use GMM segmentation, you need to install PyMaxflow and its dependencies, such as NumPy and Cython. You can install PyMaxflow using pip:
@@ -34,7 +36,8 @@ For more details and examples, please refer to the documentation and the demo no
 
 
 The difference between the pixel intensites are put through the function:
-$$\text{wpq\_vector}(\lambda_, p, q, \sigma)= \lambda \times \exp\left(-\frac{\|p - q\|_2^2}{\sigma^2}\right)
+$$
+\text{wpq_vector}(\lambda_, p, q, \sigma)= \lambda \times \exp\left(-\frac{\|p - q\|_2^2}{\sigma^2}\right)
 $$
 
 Which forms a meshed grid between every neighboring horizontal pixels and every neighboring vertical pixels. 
